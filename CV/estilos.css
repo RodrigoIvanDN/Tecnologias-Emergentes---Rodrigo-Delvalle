@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+.curriculum {
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #2d5d7b;
+}
+
+.foto {
+    width: 130px;
+    height: 130px;
+    border: 3px solid #2d5d7b;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1 {
+    margin: 0 0 5px 0;
+    color: #2d5d7b;
+}
+
+header p {
+    margin: 0;
+}
+
+.seccion {
+    margin-top: 25px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #2d5d7b;
+    font-size: 20px;
+}
+
+h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+th {
+    background-color: #2d5d7b;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .curriculum {
+        padding: 25px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tabla-movil,
+    .tabla-movil tr,
+    .tabla-movil td {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-movil tr:first-child {
+        display: none;
+    }
+
+    .tabla-movil tr {
+        margin-bottom: 15px;
+        border: 1px solid #cccccc;
+    }
+
+    .tabla-movil td {
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #dddddd;
+        font-size: 13px;
+    }
+
+    .tabla-movil td:last-child {
+        border-bottom: none;
+    }
+
+    .tabla-movil td::before {
+        display: block;
+        width: auto;
+        margin-bottom: 5px;
+        content: attr(data-label);
+        color: #2d5d7b;
+        font-weight: bold;
+    }
+}
