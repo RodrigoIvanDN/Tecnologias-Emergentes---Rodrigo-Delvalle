@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab 2</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+    </head>
+
+    <body>
+        <div class ="container">   
+        <h1>Generador de Contraseñas</h1>
+        <input id="password" readonly>
+
+        <label> Tamaño: <input id="length" type="number" value="12" min="4" max="50"></label>
+        <label> Mayusculas: <input id="uppercase" type="checkbox"></label>
+        <label> Minusculas: <input id="lowercase" type="checkbox"></label>
+        <label> Numeros: <input id="numbers" type="checkbox"></label>
+        <label> Simbolos: <input id="symbols" type="checkbox"></label>
+
+        <button id="generate">Generar</button>  
+        <button id="copy">Copiar</button>
+        </div>
+    </body> 
+</html>
